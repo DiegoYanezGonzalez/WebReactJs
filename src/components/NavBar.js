@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import logo from "../assets/cuttevents.png"
 import { ShoppingCart } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
@@ -27,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     },
     image: {
       marginRight: "10px",
-      height:"1rem",
+      height:"3rem",
     }
   }));
 
@@ -42,8 +41,8 @@ export default function NavBar() {
             <img src={logo} className={classes.image}/>
           </IconButton>
           <div className={classes.grow}/>
-          <Typography variant="h6" color="primary">
-            Venta de Uniformes 
+          <Typography variant="h4" color="primary">
+            Ventas AllShop
           </Typography>
           <div className={classes.button}>
             <Button variant="outlined">
