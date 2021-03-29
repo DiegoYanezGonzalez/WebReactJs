@@ -44,7 +44,7 @@ const products = [
     "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 1,
+    id: 5,
     name: "Gorro Negro",
     productType: "Caps",
     price: 5990,
@@ -55,7 +55,7 @@ const products = [
     "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 2,
+    id: 6,
     name: "Gorro Blanco",
     productType: "Caps White",
     price: 10990,
@@ -66,7 +66,7 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 3,
+    id: 7,
     name: "Jockey Plomo",
     productType: "Caps",
     price: 14990,
@@ -77,7 +77,7 @@ const products = [
     "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 4,
+    id: 8,
     name: "Gorro Rojo",
     productType: "Caps Red",
     price: 19990,
@@ -88,7 +88,7 @@ const products = [
     "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 1,
+    id: 9,
     name: "Gorro Negro",
     productType: "Caps",
     price: 5990,
@@ -99,7 +99,7 @@ const products = [
     "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 2,
+    id: 10,
     name: "Gorro Blanco",
     productType: "Caps White",
     price: 10990,
@@ -110,7 +110,7 @@ const products = [
       "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 3,
+    id: 11,
     name: "Jockey Plomo",
     productType: "Caps",
     price: 14990,
@@ -121,7 +121,7 @@ const products = [
     "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
   {
-    id: 4,
+    id: 12,
     name: "Gorro Rojo",
     productType: "Caps Red",
     price: 19990,

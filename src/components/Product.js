@@ -39,7 +39,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Products() {
+export default function Products({
+  product: { id, name, productType, image, price, rating, description },
+}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -56,27 +58,27 @@ export default function Products() {
           variant='h5'
           color='textSecondary'
         >
-          {accounting.formatMoney(5000,"$")}
+          {accounting.formatMoney(price,"$")}
         </Typography>
       }
-        title="SnapBack"
+        title={name}
         subheader="in Stock"
       />
       <CardMedia
         className={classes.media}
-        image="https://s2.r29static.com/bin/entry/ebd/0,675,2000,1050/x,80/1929471/image.jpg"
-        title="Nike Shoes"
+        image={image}
+        title={name}
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Running For Ever
+          {productType}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
       <IconButton aria-label='Add to Cart'>
           <AddShoppingCart fontSize='large' />
         </IconButton>
-        {Array(5)
+        {Array(rating)
           .fill()
           .map((_, i) => (
             <p>&#11088;</p>
@@ -94,13 +96,7 @@ export default function Products() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-        <Typography paragraph>"Nike Air is our iconic innovation
-         that uses pressurized air in a durable, flexible membrane
-          to provide lightweight cushioning. The air compresses on 
-          impact and then immediately returns to its original shape 
-          and volume, ready for the next impact. We debuted Nike Air 
-          in 1979, and we've been continuously evolving and improving
-           it ever since."</Typography>
+        <Typography paragraph>{description}</Typography>
         </CardContent>
       </Collapse>
     </Card>
