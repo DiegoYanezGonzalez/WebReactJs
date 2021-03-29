@@ -1,4 +1,4 @@
-import Product from "./components/Product";
+import Products from "./components/Products";
 import './App.css';
 import NavBar from "./components/NavBar";
 
@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Product/>
+      {/* <Product/> */}
+      <Products/>
     </div>
   );
 }
-
 export default App;
