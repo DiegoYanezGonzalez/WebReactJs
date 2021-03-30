@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavBar() {
   const classes = useStyles();
-  const [{basket},dispatch]=useStateValue();
+  const [{basket,user},dispatch]=useStateValue();
 
   return (
     <div className={classes.root}>
@@ -47,7 +47,7 @@ export default function NavBar() {
           </Link>
           <div className={classes.grow}/>
           <Typography variant="h4" color="primary">
-            Ventas AllShop
+            Ventas AllShop  -  Hello {user ? user.email : "Guest"}
           </Typography>
           <div className={classes.button}>
             <Link to="/signin">
