@@ -15,7 +15,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { AddShoppingCart } from '@material-ui/icons';
 import accounting from 'accounting';
-import {useStateValue} from "../StateProvider"
+import {useStateValue} from "../StateProvider";
 import { actionTypes } from '../reducer';
 
 const useStyles = makeStyles((theme) => ({
