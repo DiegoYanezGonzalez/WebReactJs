@@ -29,8 +29,8 @@ const Total = () => {
          <Button 
          component={Link}
          className={classes.button}
-          variant="contained" 
-          color="secondary">
+          variant='contained' 
+          color='secondary'>
               Check Out
               </Button>
         </div> 

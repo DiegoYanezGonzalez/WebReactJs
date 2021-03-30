@@ -33,26 +33,26 @@ useEffect(() => {
   
 
   return (
-    <Router>
-<div className="app">
+  <Router>
+    <div className='app'>
       <NavBar/>
-      <Switch>
-      <Route path="/signup">
-          <SignUp/>
-        </Route>
-      <Route path="/signin">
-          <Signin/>
-        </Route>
-        <Route path="/checkout-page">
-          <CheckoutPage/>
-        </Route>
-        <Route path="/checkout">
-          <Checkout/>
-        </Route>
-        <Route path="/">
-          <Products/>
-        </Route>
-      </Switch>
+        <Switch>
+           <Route path='/signup'>
+               <SignUp/>
+            </Route>
+            <Route path='/signin'>
+              <Signin/>
+            </Route>
+            <Route path='/checkout-page'>
+               <CheckoutPage/>
+            </Route>
+            <Route path='/checkout'>
+               <Checkout/>
+            </Route>
+            <Route path='/'>
+               <Products/>
+            </Route>
+        </Switch>
     </div>
   </Router>
     
