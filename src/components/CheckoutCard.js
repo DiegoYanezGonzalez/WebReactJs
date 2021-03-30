@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import accounting from 'accounting';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
-import {useStateValue} from "../StateProvider"
+import {useStateValue} from "../StateProvider";
 import { actionTypes } from '../reducer';
 
 const useStyles = makeStyles((theme) => ({

@@ -20,7 +20,7 @@ const reducer = (state,action)=>{
        };
        case "REMOVE_ITEM":
         const index = state.basket.findIndex(
-            (basketItem) => basketItem.id ===action.id
+            (basketItem) => basketItem.id === action.id
         );
         let newBasket = [...state.basket];
         if( index >= 0) {
@@ -30,9 +30,10 @@ const reducer = (state,action)=>{
         }
            return{
                ...state,
-               basket:newBasket,
+               basket: newBasket,
            };
-       default: return state;
+       default: 
+       return state;
     }
 };
 export default reducer;

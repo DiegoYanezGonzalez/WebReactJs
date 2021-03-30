@@ -9,7 +9,7 @@ import logo from "../assets/cuttevents.png"
 import { ShoppingCart } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import {useStateValue} from "../StateProvider"
+import {useStateValue} from "../StateProvider";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,9 +50,11 @@ export default function NavBar() {
             Ventas AllShop
           </Typography>
           <div className={classes.button}>
+            <Link to="/signin">
             <Button variant="outlined">
             <strong>Sign In</strong>  
             </Button>
+            </Link>
             <Link to="check-out-page">
           <IconButton aria-label="show cart items" color="inherit">
             <Badge badgeContent={basket?.length} color="secondary">

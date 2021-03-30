@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import CheckoutCard from "./CheckoutCard";
 import Total from "./Total";
-import {useStateValue} from "../StateProvider"
+import {useStateValue} from "../StateProvider";
 
 const useStyles = makeStyles((theme) => ({
   root: {
