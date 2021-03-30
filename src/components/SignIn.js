@@ -49,17 +49,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignIn() {
+  const classes = useStyles();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
-  const classes = useStyles();
-
+  
   const signin = (e) => {
     e.preventDefault();
-    auth
-      .signInWithEmailAndPassword(email, password)
-      .then((auth) => history.push("/"))
-      .catch((err) => alert(err.message));
+    auth.signInWithEmailAndPassword(email, password).then((auth) =>
+    history.push("/"))
+    .catch((err) => alert(err.message));
   };
 
   return (
@@ -110,6 +109,7 @@ export default function SignIn() {
             variant='contained'
             color='primary'
             className={classes.submit}
+            onClick={signin} 
           >
             Sign In
           </Button>
