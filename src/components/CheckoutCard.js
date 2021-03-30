@@ -4,14 +4,11 @@ import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
 import accounting from 'accounting';
-import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+import DeleteIcon from '@material-ui/icons/Delete';
 import {useStateValue} from "../StateProvider";
 import { actionTypes } from '../reducer';
 
@@ -36,21 +33,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CheckoutCard({
-  product: { id, name, productType, image, price, rating, description },
-}) {
+const CheckoutCard = ({
+  product: { id, name, image, price, rating}})=> {
   const classes = useStyles();
   const [{basket},dispatch]=useStateValue();
-  const [expanded, setExpanded] = React.useState(false);
+  // const [expanded, setExpanded] = React.useState(false);
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
-const removeItem = ()=>dispatch({
+
+const removeItem = () =>{
+  dispatch({
 type:actionTypes.REMOVE_ITEM,
 id,
-})
+});
+};
 
   return (
     <Card className={classes.root}>
@@ -81,10 +77,11 @@ id,
             <p>&#11088;</p>
           ))}
           </div>
-          <IconButton>
-          <DeleteOutlineIcon fontSize="large" onClick={removeItem}></DeleteOutlineIcon>
+          <IconButton onClick={removeItem}>
+          <DeleteIcon fontSize="large"/>
           </IconButton>
       </CardActions>
     </Card>
   );
-}
+};
+export default CheckoutCard;

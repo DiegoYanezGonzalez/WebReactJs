@@ -75,7 +75,7 @@ export default function NavBar() {
             <strong>{user ? "Sign OUT" : "Sign IN"}</strong>  
             </Button>
             </Link>
-            <Link to="check-out-page">
+            <Link to="checkout-page">
           <IconButton aria-label="show cart items" color="inherit">
             <Badge badgeContent={basket?.length} color="secondary">
             <ShoppingCart fontSize="large" color="primary"/>
