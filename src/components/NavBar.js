@@ -10,6 +10,10 @@ import { ShoppingCart } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import {useStateValue} from "../StateProvider";
+import { auth } from "../firebase";
+import  { actionTypes }  from  "../reducer" ;
+import {useHistory } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -35,6 +39,22 @@ const useStyles = makeStyles((theme) => ({
 export default function NavBar() {
   const classes = useStyles();
   const [{basket,user},dispatch]=useStateValue();
+  const history = useHistory();
+
+  const handleAuth = () =>{
+    if(user){
+      auth.signOut();
+      dispatch({
+        type:actionTypes.EMPTY_BASKET,
+        basket: [],
+      });
+      dispatch({
+        type:actionTypes.SET_USER,
+        user: null,
+      });
+      history.push("/")
+    }
+  }
 
   return (
     <div className={classes.root}>
@@ -51,8 +71,8 @@ export default function NavBar() {
           </Typography>
           <div className={classes.button}>
             <Link to="/signin">
-            <Button variant="outlined">
-            <strong>Sign In</strong>  
+            <Button variant="outlined" onClick={handleAuth }>
+            <strong>{user ? "Sign OUT" : "Sign IN"}</strong>  
             </Button>
             </Link>
             <Link to="check-out-page">
