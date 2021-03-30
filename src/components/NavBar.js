@@ -9,6 +9,7 @@ import logo from "../assets/cuttevents.png"
 import { ShoppingCart } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import {useStateValue} from "../StateProvider"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavBar() {
   const classes = useStyles();
+  const [{basket},dispatch]=useStateValue();
 
   return (
     <div className={classes.root}>
@@ -53,7 +55,7 @@ export default function NavBar() {
             </Button>
             <Link to="check-out-page">
           <IconButton aria-label="show cart items" color="inherit">
-            <Badge badgeContent={2} color="secondary">
+            <Badge badgeContent={basket?.length} color="secondary">
             <ShoppingCart fontSize="large" color="primary"/>
             </Badge>
            </IconButton>

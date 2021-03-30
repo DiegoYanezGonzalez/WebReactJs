@@ -2,7 +2,8 @@ export const initialState = {
     basket:[]
 }
 export const actionTypes ={
-    ADD_TO_BASKET: "ADD_TO_BASKET"
+    ADD_TO_BASKET: "ADD_TO_BASKET",
+    REMOVE_ITEM: "REMOVE_ITEM"
 }
 const reducer = (state,action)=>{
     console.log(action);
@@ -12,6 +13,19 @@ const reducer = (state,action)=>{
             ...state,
             basket: [...state.basket,action.item],
        };
+       case "REMOVE_ITEM":
+        const index = state.basket.findIndex((basketItem=>basketItem.id ===action.id))
+        let newBasket = [...state.basket];
+        if(index>=0){
+            //Busca el indice del array de carrito y eliminara a base del indice y no del id.
+            newBasket.splice(index,1)
+        }else{
+            console.log("cant remove product")
+        }
+           return{
+               ...state,
+               basket:newBasket,
+           }
        default: return state;
     }
 }

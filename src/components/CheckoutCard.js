@@ -12,6 +12,8 @@ import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import accounting from 'accounting';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+import {useStateValue} from "../StateProvider"
+import { actionTypes } from '../reducer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,11 +40,17 @@ export default function CheckoutCard({
   product: { id, name, productType, image, price, rating, description },
 }) {
   const classes = useStyles();
+  const [{basket},dispatch]=useStateValue();
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+
+const removeItem = ()=>dispatch({
+type:actionTypes.REMOVE_ITEM,
+id,
+})
 
   return (
     <Card className={classes.root}>
@@ -74,7 +82,7 @@ export default function CheckoutCard({
           ))}
           </div>
           <IconButton>
-          <DeleteOutlineIcon fontSize="large"></DeleteOutlineIcon>
+          <DeleteOutlineIcon fontSize="large" onClick={removeItem}></DeleteOutlineIcon>
           </IconButton>
       </CardActions>
     </Card>
