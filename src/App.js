@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import CheckoutPage from "./components/CheckoutPage";
 import {Switch,BrowserRouter as Router, Route} from "react-router-dom"
 import Signin from "./components/Signin";
-import SignUp from "./components/Signup";
+import Signup from "./components/Signup";
 import {useEffect} from "react";
 import { auth } from "./firebase";
 import {actionTypes} from "./reducer";
@@ -38,7 +38,7 @@ useEffect(() => {
       <NavBar/>
         <Switch>
            <Route path='/signup'>
-               <SignUp/>
+               <Signup/>
             </Route>
             <Route path='/signin'>
               <Signin/>
