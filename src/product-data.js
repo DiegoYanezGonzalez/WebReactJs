@@ -131,6 +131,61 @@ const products = [
     description:
     "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
   },
+  {
+    id: 13,
+    name: "Trumpet Gold",
+    productType: "Winds Music",
+    price: 125999,
+    rating: 5,
+    image:
+       " https://images-na.ssl-images-amazon.com/images/I/71l6xKqHLCL._AC_SL1500_.jpg",
+    description:
+    "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
+  },
+  {
+    id: 14,
+    name: "Audifonos Marley",
+    productType: "Black Phone",
+    price: 100990,
+    rating: 4,
+    image:
+      "https://www.pcfactory.cl/public/foto/31322/1_500.jpg?t=1542296074  ",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
+  },
+  {
+    id: 15,
+    name: "Sax Coltrane",
+    productType: "Caps",
+    price: 1000000,
+    rating: 5,
+    image:
+      " data:image/jpeg;base64,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 ",
+    description:
+    "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
+  },
+  {
+    id: 16,
+    name: "Trumpet Gold",
+    productType: "Winds Music",
+    price: 125999,
+    rating: 5,
+    image:
+       " https://images-na.ssl-images-amazon.com/images/I/71l6xKqHLCL._AC_SL1500_.jpg",
+    description:
+    "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
+  },
+  {
+    id: 17,
+    name: "Trumpet Gold",
+    productType: "Winds Music",
+    price: 125999,
+    rating: 5,
+    image:
+       " https://images-na.ssl-images-amazon.com/images/I/71l6xKqHLCL._AC_SL1500_.jpg",
+    description:
+    "Lorem ipsum dolor sit amet consectetur adipiscing elit etiam gravida venenatis metus, lacinia enim ullamcorper fermentum conubia lacus at dignissisemper netus. Aptent sociosqu natoque mollis mi consequat varius purus pretium eu, aliquam ultricies fames vehicula praesent suscipit odio tempus elementum conubia, sapien tristiqu eget lacinia ac condimentum rhoncus nostra. Pellentesque sociosqu nulla eros platea montesfames, varius faucibus viverra laoreet gravida, quam erat mi himenaeos ornare. Mus euismod tincidunt nibh malesuada penatibus litora mauris, fusce bibendum integer auctor faucibus nisi vitae proin, curae blandit at rutrum mi imperdiet.",
+  },
 ];
 
 export default products;
