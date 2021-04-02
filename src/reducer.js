@@ -29,7 +29,7 @@ const reducer = (state,action)=>{
         if( index >= 0) {
             newBasket.splice(index,1);
         }else{
-            console.log("cant remove product");
+            console.log('cant remove product (id: ${action.id})!');
         }
            return{
                ...state,
@@ -47,7 +47,7 @@ const reducer = (state,action)=>{
                };
             
        default: 
-       return state;
+        return state;
     }
 };
 export default reducer;

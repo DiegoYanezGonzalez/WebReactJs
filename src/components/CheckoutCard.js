@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -33,21 +32,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CheckoutCard = ({
-  product: { id, name, image, price, rating}})=> {
+const CheckoutCard = ({product: { id, name, image, price, rating}})=> {
   const classes = useStyles();
   const [{basket},dispatch]=useStateValue();
-  // const [expanded, setExpanded] = React.useState(false);
-
-
-
+  
 const removeItem = () =>{
-  dispatch({
-type:actionTypes.REMOVE_ITEM,
-id,
-});
+     dispatch({
+      type:actionTypes.REMOVE_ITEM,
+      id:id,
+  });
 };
-
   return (
     <Card className={classes.root}>
       <CardHeader
@@ -69,7 +63,7 @@ id,
         title={name}
       />
     
-      <CardActions disableSpacingclassName={classes.CardActions}> 
+      <CardActions disableSpacing className={classes.CardActions}> 
         <div className={classes.cardRating}>
         {Array(rating)
           .fill()
@@ -78,7 +72,7 @@ id,
           ))}
           </div>
           <IconButton onClick={removeItem}>
-          <DeleteIcon fontSize="large"/>
+           <DeleteIcon fontSize='large'/>
           </IconButton>
       </CardActions>
     </Card>
