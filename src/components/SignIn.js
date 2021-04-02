@@ -64,7 +64,7 @@ export default function SignIn() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component='h1' variant='h5'>
-          Sign in
+           Get in
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -117,7 +117,7 @@ export default function SignIn() {
             </Grid>
             <Grid item>
               <RouteLink to='/signup'>
-                {"Don't have an account? Sign Up"}
+                {"Don't have an account? check in"}
               </RouteLink>
             </Grid>
           </Grid>
