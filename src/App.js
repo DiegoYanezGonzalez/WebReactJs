@@ -10,6 +10,7 @@ import { auth } from "./firebase";
 import {actionTypes} from "./reducer";
 import {useStateValue} from "./StateProvider";
 import Checkout from "./components/CheckoutForm/Checkout";
+import ScrollableTabsButtonForce from "./components/ScrollableTabsButtonForce";
 
 function App() {
   const [{user},dispatch]=useStateValue();
@@ -36,6 +37,7 @@ useEffect(() => {
   <Router>
     <div className='app'>
       <NavBar/>
+      <ScrollableTabsButtonForce/>
         <Switch>
            <Route path='/signup'>
                <Signup/>
