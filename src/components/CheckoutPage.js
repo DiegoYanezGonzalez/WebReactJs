@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: "2rem",
+    
   },
 }));
 const CheckoutPage = () => {
@@ -30,7 +31,7 @@ const CheckoutPage = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} >
         <Grid item xs={12}>
           <Typography align='center' gutterBottom variant='h4'>
             Shopping Cart

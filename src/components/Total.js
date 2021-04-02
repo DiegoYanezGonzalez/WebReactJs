@@ -28,11 +28,10 @@ const Total = () => {
          <h5> {accounting.formatMoney(getBasketTotal(basket), "$")}</h5>
          <Link to="/checkout">
          <Button 
-    
          className={classes.button}
           variant='contained' 
           color='secondary'>
-           Check Out
+           Buy your cart
          </Button>
          </Link>
          

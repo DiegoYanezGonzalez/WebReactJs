@@ -3,6 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Product from "./Product";
 import products from "../product-data";
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import AppBar from '@material-ui/core/AppBar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,6 +19,7 @@ const Products = () => {
 
   return (
     <div className={classes.root}>
+    
       <Grid container spacing={3}>
         {products.map((product) => (
           <Grid item xs={12} sm={6} md={4} lg={3}>

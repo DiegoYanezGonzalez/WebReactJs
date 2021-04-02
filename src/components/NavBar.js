@@ -71,7 +71,7 @@ export default function NavBar() {
           </Typography>
           <div className={classes.button}>
             <Link to="/signin">
-            <Button variant="outlined" onClick={handleAuth }>
+            <Button color="#2979ff" variant="contained" onClick={handleAuth }>
             <strong>{user ? "Sign OUT" : "Sign IN"}</strong>  
             </Button>
             </Link>
@@ -85,6 +85,7 @@ export default function NavBar() {
           </div>
         </Toolbar>
       </AppBar>
+      
     </div>
   );
 }

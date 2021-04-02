@@ -18,12 +18,7 @@ import {auth} from "../firebase";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+     
     </Typography>
   );
 }
@@ -126,13 +121,33 @@ export default function SignUp() {
                 autoComplete="current-password"
               />
             </Grid>
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
                 label="I want to receive inspiration, marketing promotions and updates via email."
               />
-            </Grid>
+            </Grid> */}
           </Grid>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="#00b8d4"
+            className={classes.submit}
+            onClick={signup}
+          >
+            Sign Up
+          </Button>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="secondary"
+            className={classes.submit}
+            onClick={signup}
+          >
+            Sign in with Google
+          </Button>
           <Button
             type="submit"
             fullWidth
@@ -141,7 +156,7 @@ export default function SignUp() {
             className={classes.submit}
             onClick={signup}
           >
-            Sign Up
+            Sign in with Facebook
           </Button>
           <Grid container justify="flex-end">
             <Grid item>

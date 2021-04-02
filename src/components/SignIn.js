@@ -18,12 +18,7 @@ import { auth } from "../firebase";
 function Copyright() {
   return (
     <Typography variant='body2' color='textSecondary' align='center'>
-      {"Copyright © "}
-      <Link color='inherit' href='https://material-ui.com/'>
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
+     
     </Typography>
   );
 }
@@ -113,6 +108,7 @@ export default function SignIn() {
           >
             Sign In
           </Button>
+          
           <Grid container>
             <Grid item xs>
               <Link href='#' variant='body2'>

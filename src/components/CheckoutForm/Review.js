@@ -7,18 +7,18 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
 
 const products = [
-  { name: 'Product 1', desc: 'A nice thing', price: '$9.99' },
-  { name: 'Product 2', desc: 'Another thing', price: '$3.45' },
-  { name: 'Product 3', desc: 'Something else', price: '$6.51' },
-  { name: 'Product 4', desc: 'Best thing of all', price: '$14.11' },
-  { name: 'Shipping', desc: '', price: 'Free' },
+  { name: 'Saxo', desc: 'A nice thing', price: '$20.500' },
+  { name: 'Poleron', desc: 'Another thing', price: '$15.400' },
+  { name: 'Gorro', desc: 'Something else', price: '$19.800' },
+  { name: 'Jockey', desc: 'Best thing of all', price: '$5.900' },
+  { name: 'Shipping', desc: '', price: '$3000' },
 ];
-const addresses = ['1 Material-UI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
+const addresses = ['Vicuña Mackena', '4058', 'Santiago', '99999', 'CHILE'];
 const payments = [
   { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
+  { name: 'Card holder', detail: 'Sr. Compra Mucho' },
   { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Expiry date', detail: '04/2024' },
+  { name: 'Expiry date', detail: '04/2021' },
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +51,7 @@ export default function Review() {
         <ListItem className={classes.listItem}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" className={classes.total}>
-            $34.06
+            $105.000
           </Typography>
         </ListItem>
       </List>
