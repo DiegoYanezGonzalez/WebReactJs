@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import logo from "../assets/cuttevents.png"
+import logo from "../assets/logoTwo.gif"
 import { ShoppingCart } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -80,6 +80,10 @@ export default function NavBar() {
             <strong>{user ? "Sign OUT" : "Sign IN"}</strong>  
             </Button>
             </Link>
+            <Link to="/map-page">
+            <RoomIcon fontSize="large" className={classes.button} color="inherit"  >
+            </RoomIcon>
+            </Link>
             <Link to="checkout-page">
           <IconButton aria-label="show cart items" color="inherit">
             <Badge badgeContent={basket?.length} color="secondary">
@@ -87,10 +91,7 @@ export default function NavBar() {
             </Badge>
            </IconButton>
             </Link>
-            <Link to="/map-page">
-            <RoomIcon  className={classes.button} color="inherit"  >
-            </RoomIcon>
-            </Link>
+            
           </div>
         </Toolbar>
       </AppBar>

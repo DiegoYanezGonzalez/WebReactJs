@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import { Link } from "react-router-dom";
 
 function Copyright() {
   return (
@@ -112,12 +113,21 @@ export default function Checkout() {
             {activeStep === steps.length ? (
               <React.Fragment>
                 <Typography variant="h5" gutterBottom>
-                  Thank you for your order.
+                  Thank you for your order Pay with WebPay Plus.
                 </Typography>
                 <Typography variant="subtitle1">
-                  Your order number is #2001539. We have emailed your order confirmation, and will
+                  Will email your order confirmation, and will
                   send you an update when your order has shipped.
                 </Typography>
+                <Link to="/checkout">
+                   <Button 
+                         className={classes.buttons}
+                         variant='contained' 
+                         color='secondary'
+                         >
+                          Pay with WebPay
+                   </Button>
+                 </Link>
               </React.Fragment>
             ) : (
               <React.Fragment>

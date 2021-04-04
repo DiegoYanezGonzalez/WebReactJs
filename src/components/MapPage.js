@@ -13,11 +13,11 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
   image: {
-    backgroundImage: 'url(https://http2.mlstatic.com/uniformes-de-trabajo-de-alta-costura-D_NQ_NP_734319-MLM44992253263_022021-F.webp)',
+    backgroundImage: 'url(https://i.postimg.cc/vBncmGyk/mi-talla-2021-cortada.png)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-    backgroundSize: 'cover',
+    backgroundSize: 'small',
     backgroundPosition: 'center',
   },
   paper: {
