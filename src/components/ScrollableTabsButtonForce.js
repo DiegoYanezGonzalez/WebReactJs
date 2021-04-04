@@ -66,7 +66,7 @@ export default function ScrollableTabsButtonForce() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="secondary">
+      <AppBar position="static" color="inherit">
         <Tabs
           value={value}
           onChange={handleChange}
@@ -88,36 +88,7 @@ export default function ScrollableTabsButtonForce() {
           <Tab label="Item Ten" icon={<PaymentSharp />} {...a11yProps(9)} />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
-      </TabPanel>
-      <TabPanel value={value} index={7}>
-        Item Eigth
-      </TabPanel>
-      <TabPanel value={value} index={8}>
-        Item Nine
-      </TabPanel>
-      <TabPanel value={value} index={9}>
-        Item Ten
-      </TabPanel>
+      
     </div>
   );
 }

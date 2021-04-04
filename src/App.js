@@ -11,6 +11,7 @@ import {actionTypes} from "./reducer";
 import {useStateValue} from "./StateProvider";
 import Checkout from "./components/CheckoutForm/Checkout";
 import ScrollableTabsButtonForce from "./components/ScrollableTabsButtonForce";
+import MapPage from "./components/MapPage";
 
 function App() {
   const [{user},dispatch]=useStateValue();
@@ -50,6 +51,9 @@ useEffect(() => {
             </Route>
             <Route path='/checkout'>
                <Checkout/>
+            </Route>
+            <Route path='/map-page'>
+               <MapPage/>
             </Route>
             <Route path='/'>
                <Products/>

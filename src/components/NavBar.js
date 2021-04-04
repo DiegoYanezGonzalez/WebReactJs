@@ -13,6 +13,7 @@ import {useStateValue} from "../StateProvider";
 import { auth } from "../firebase";
 import  { actionTypes }  from  "../reducer" ;
 import {useHistory } from "react-router-dom";
+import RoomIcon from '@material-ui/icons/Room';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,10 +30,14 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
       marginLeft: theme.spacing(2),
+      marginTop:theme.spacing(1),
     },
     image: {
       marginRight: "10px",
       height:"3rem",
+    },
+    iconmap:{
+      marginTop:"1rem",
     }
   }));
 
@@ -66,7 +71,7 @@ export default function NavBar() {
           </IconButton>
           </Link>
           <div className={classes.grow}/>
-          <Typography variant="h4" color="primary">
+          <Typography variant="h4" color="primary" position="justify">
             Ventas AllShop  -  Hello {user ? user.email : "Guest"}
           </Typography>
           <div className={classes.button}>
@@ -81,6 +86,10 @@ export default function NavBar() {
             <ShoppingCart fontSize="large" color="primary"/>
             </Badge>
            </IconButton>
+            </Link>
+            <Link to="/map-page">
+            <RoomIcon  className={classes.button} color="inherit"  >
+            </RoomIcon>
             </Link>
           </div>
         </Toolbar>
