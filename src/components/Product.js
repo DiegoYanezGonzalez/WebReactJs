@@ -82,6 +82,7 @@ export default function Products({
         subheader="in Stock"
       />
       <CardMedia
+      style={{ width: "80%", margin: "10px 0 1" }}
         className={classes.media}
         image={image}
         title={name}

@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = ['Contact', 'Shipping address', 'Review your order'];
 
 function getStepContent(step) {
   switch (step) {
@@ -126,6 +126,7 @@ export default function Checkout() {
                          color='secondary'
                          >
                           Pay with WebPay
+                          
                    </Button>
                  </Link>
               </React.Fragment>

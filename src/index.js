@@ -5,13 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StateProvider} from './StateProvider';
 import reducer,{ initialState} from './reducer.js';
+import ThemeContext from './context/ThemeContext'
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <ThemeContext.Provider value="red">
     <StateProvider initialState={initialState} reducer={reducer}>
     <App />
     </StateProvider>
+    </ThemeContext.Provider>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

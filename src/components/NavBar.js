@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,6 +14,7 @@ import { auth } from "../firebase";
 import  { actionTypes }  from  "../reducer" ;
 import {useHistory } from "react-router-dom";
 import RoomIcon from '@material-ui/icons/Room';
+import ThemeContext from '../context/ThemeContext'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -37,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
       height:"3rem",
     },
     iconmap:{
-      marginTop:"1rem",
+      marginTop:"10",
     }
   }));
 
@@ -45,6 +46,18 @@ export default function NavBar() {
   const classes = useStyles();
   const [{basket,user},dispatch]=useStateValue();
   const history = useHistory();
+
+//   //Valor inicial de darkmode que es falso y mostrara ligthmode 
+// const [darkMode,setDarkMode] = useState(false);
+
+// const color =useContext(ThemeContext);
+
+
+// //click que a ser llamado con la funcion set que hace cambiarlo de true a false
+// const handleClick =()=>{
+//   setDarkMode(!darkMode);
+// }
+
 
   const handleAuth = () =>{
     if(user){

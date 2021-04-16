@@ -9,17 +9,17 @@ export default function PaymentForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Payment method
+      Where we send your purchase
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-          <TextField required id="cardName" label="Name on card" fullWidth autoComplete="cc-name" />
+          <TextField required id="namePlace" label="Name of the place" fullWidth autoComplete="cc-name" />
         </Grid>
         <Grid item xs={12} md={6}>
           <TextField
             required
             id="cardNumber"
-            label="Card number"
+            label="Number"
             fullWidth
             autoComplete="cc-number"
           />
@@ -40,7 +40,7 @@ export default function PaymentForm() {
         <Grid item xs={12}>
           <FormControlLabel
             control={<Checkbox color="secondary" name="saveCard" value="yes" />}
-            label="Remember credit card details for next time"
+            label="¿Remember the address details for next time?"
           />
         </Grid>
       </Grid>

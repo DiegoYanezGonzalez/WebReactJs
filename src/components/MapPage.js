@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import RoomIcon from '@material-ui/icons/Room';
+import Chip from '@material-ui/core/Chip';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -13,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
   image: {
-    backgroundImage: 'url(https://i.postimg.cc/vBncmGyk/mi-talla-2021-cortada.png)',
+    backgroundImage: 'url(https://vogue.ua/upload/inner/89/1440505089.jpg)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-    backgroundSize: 'small',
+      theme.palette.type === 'dark' ? theme.palette.grey[50] : theme.palette.grey[900],
+    backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
   paper: {
@@ -55,6 +56,7 @@ export default function MapPage() {
           Attention places
           </Typography>
         </div>
+        
       </Grid>
     </Grid>
   );

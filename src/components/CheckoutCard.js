@@ -58,6 +58,7 @@ const removeItem = () =>{
         subheader="in Stock"
       />
       <CardMedia
+      
         className={classes.media}
         image={image}
         title={name}

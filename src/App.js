@@ -12,6 +12,7 @@ import {useStateValue} from "./StateProvider";
 import Checkout from "./components/CheckoutForm/Checkout";
 import ScrollableTabsButtonForce from "./components/ScrollableTabsButtonForce";
 import MapPage from "./components/MapPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [{user},dispatch]=useStateValue();
@@ -36,9 +37,10 @@ useEffect(() => {
 
   return (
   <Router>
-    <div className='app'>
+    <div className='app' >
       <NavBar/>
       <ScrollableTabsButtonForce/>
+      
         <Switch>
            <Route path='/signup'>
                <Signup/>
@@ -60,7 +62,9 @@ useEffect(() => {
             </Route>
         </Switch>
     </div>
+    <Footer/>
   </Router>
+  
     
   );
 }
