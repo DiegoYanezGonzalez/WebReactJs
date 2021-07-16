@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "7rem",
     },
     appBar: {
-      backgroundColor: "whitesmoke",
+      backgroundColor: "#fff",
       boxShadow: "none",
     },
     grow: {
@@ -85,7 +85,7 @@ export default function NavBar() {
           </Link>
           <div className={classes.grow}/>
           <Typography variant="h4" color="primary" position="justify">
-            Ventas AllShop  -  Hello {user ? user.email : "Guest"}
+            Todo lo que necesitas {user ? user.email : ""}
           </Typography>
           <div className={classes.button}>
             <Link to="/signin">
@@ -100,7 +100,7 @@ export default function NavBar() {
             <Link to="checkout-page">
           <IconButton aria-label="show cart items" color="inherit">
             <Badge badgeContent={basket?.length} color="secondary">
-            <ShoppingCart fontSize="large" color="primary"/>
+            <ShoppingCart fontSize="large" color="#fff"/>
             </Badge>
            </IconButton>
             </Link>

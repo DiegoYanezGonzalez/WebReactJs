@@ -76,16 +76,16 @@ export default function ScrollableTabsButtonForce() {
           textColor="primary"
           aria-label="scrollable force tabs example"
         >
-          <Tab label="Item One" icon={<PhoneIcon />} {...a11yProps(0)} />
-          <Tab label="Item Two" icon={<FavoriteIcon />} {...a11yProps(1)} />
-          <Tab label="Item Three" icon={<PersonPinIcon />} {...a11yProps(2)} />
-          <Tab label="Item Four" icon={<HelpIcon />} {...a11yProps(3)} />
-          <Tab label="Item Five" icon={<ShoppingBasket />} {...a11yProps(4)} />
-          <Tab label="Item Six" icon={<ThumbDown />} {...a11yProps(5)} />
-          <Tab label="Item Seven" icon={<PhoneAndroid />} {...a11yProps(6)} />
-          <Tab label="Item Eigth" icon={<ShopTwo />} {...a11yProps(7)} />
-          <Tab label="Item Nine" icon={<FavoriteIcon />} {...a11yProps(8)} />
-          <Tab label="Item Ten" icon={<PaymentSharp />} {...a11yProps(9)} />
+          <Tab label="Ofertas" icon={<ShoppingBasket />} {...a11yProps(0)} />
+          <Tab label="Liquidaciones" icon={<FavoriteIcon />} {...a11yProps(1)} />
+          <Tab label="Gorros de Lana" icon={<PersonPinIcon />} {...a11yProps(2)} />
+          <Tab label="SnapBack" icon={<HelpIcon />} {...a11yProps(3)} />
+          <Tab label="Bucket Hat" icon={<ShoppingBasket />} {...a11yProps(4)} />
+          <Tab label="Buzos" icon={<ThumbDown />} {...a11yProps(5)} />
+          <Tab label="Polerones" icon={<PhoneAndroid />} {...a11yProps(6)} />
+          <Tab label="Pantalones" icon={<ShopTwo />} {...a11yProps(7)} />
+          <Tab label="Mascarillas" icon={<FavoriteIcon />} {...a11yProps(8)} />
+          <Tab label="Poleras" icon={<PaymentSharp />} {...a11yProps(9)} />
         </Tabs>
       </AppBar>
       
